@@ -1024,43 +1024,169 @@ body::before {
 }
 
 /* ---- RESPONSIVE ---- */
+/* =============================================
+   RESPONSIVE PATCH — Replace the existing
+   @media blocks at the bottom of style.css
+   with this entire block.
+   Everything above stays untouched.
+============================================= */
+
+/* ---- 1024px and below ---- */
 @media (max-width: 1024px) {
   .container { padding: 0 32px; }
+
   #navbar { padding: 20px 32px; }
   #navbar.scrolled { padding: 14px 32px; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
+
   .hero-counter { display: none; }
+  .hero-bg-text { display: none; }
+
   .about-grid { grid-template-columns: 1fr; gap: 48px; }
+
   .skills-grid { grid-template-columns: 1fr; }
   .skill-card { border-right: none; border-bottom: 1px solid var(--border); }
   .skill-card:last-child { border-bottom: none; }
-  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .project-card.wide-card { grid-column: span 1; }
+  .wide-card .project-img { aspect-ratio: 4/3; }
+
+  .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+
   .modal-content { width: 100%; }
   .modal-gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  .gallery-thumb.featured { grid-column: span 1; aspect-ratio: 4/3; }
+  .gallery-thumb.featured { grid-column: span 2; aspect-ratio: 4/3; }
 }
 
+/* ---- 768px and below ---- */
 @media (max-width: 768px) {
-  .section { padding: 80px 0; }
-  #hero { padding: 0 24px; }
-  .container { padding: 0 24px; }
-  #navbar { padding: 20px 24px; }
-  #navbar.scrolled { padding: 14px 24px; }
-  .hero-scroll-hint { left: 24px; bottom: 32px; }
-  .projects-grid { grid-template-columns: 1fr; }
-  .modal-meta-bar { flex-direction: column; }
-  .modal-meta-item { border-right: none; border-bottom: 1px solid var(--border); padding: 16px 24px; }
-  .modal-header { padding: 20px 24px 16px; }
-  .modal-desc-wrap, .modal-gallery-section { padding: 24px; }
-  .modal-gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  .gallery-thumb.featured { grid-column: span 2; }
-  .edu-item { grid-template-columns: 1fr; gap: 16px; }
-  .edu-icon { display: none; }
-  .exp-item { grid-template-columns: 1fr; gap: 16px; }
-  .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
-  .hero-bg-text { font-size: 100px; right: -20px; }
+  /* spacing */
+  .section { padding: 72px 0; }
+  .container { padding: 0 20px; }
+
+  /* navbar */
+  #navbar { padding: 18px 20px; }
+  #navbar.scrolled { padding: 12px 20px; }
+
+  /* hide cursor elements */
   #cursor, #cursor-follower { display: none; }
   body { cursor: auto; }
+
+  /* hero */
+  #hero {
+    padding: 100px 20px 80px;
+    min-height: 100svh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .hero-content { padding-top: 0; max-width: 100%; }
+  .hero-name { font-size: clamp(3rem, 14vw, 5rem); }
+  .hero-tagline { font-size: 1.1rem; }
+  .hero-cta { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .btn-primary, .btn-ghost { font-size: 0.72rem; }
+  .hero-scroll-hint { left: 20px; bottom: 28px; }
+  .hero-counter { display: none; }
+
+  /* section titles */
+  .section-title { font-size: clamp(2rem, 8vw, 3rem); margin-bottom: 40px; }
+
+  /* about */
+  .about-text { font-size: 1.05rem; }
+
+  /* education */
+  .edu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 28px 0;
+  }
+  .edu-icon { display: none; }
+  .edu-year { font-size: 0.85rem; }
+  .edu-content h3 { font-size: 1.3rem; }
+
+  /* skills */
+  .skill-card { padding: 32px 24px; }
+
+  /* experience */
+  .exp-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 32px 0;
+  }
+  .exp-item:hover { padding-left: 0; }
+  .exp-body h3 { font-size: 1.2rem; }
+
+  /* projects */
+  .projects-grid { grid-template-columns: 1fr; gap: 3px; }
+  .project-card.wide-card { grid-column: span 1; }
+  .wide-card .project-img { aspect-ratio: 4/3; }
+
+  /* modal */
+  .modal-content { width: 100%; border-radius: 0; }
+  .modal-header { padding: 18px 20px 14px; }
+  .modal-title { font-size: 1.5rem; }
+  .modal-hero-placeholder { height: 240px; }
+  .modal-meta-bar { flex-direction: column; }
+  .modal-meta-item {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 14px 20px;
+  }
+  .modal-meta-item:last-child { border-bottom: none; }
+  .modal-desc-wrap { padding: 20px; }
+  .modal-gallery-section { padding: 20px 20px 40px; }
+  .modal-gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 3px; }
+  .gallery-thumb { height: 160px; }
+  .gallery-thumb.featured {
+    grid-column: span 2;
+    height: 200px;
+    aspect-ratio: unset;
+  }
+
+  /* lightbox */
+  .lightbox-prev { left: 12px; font-size: 2.2rem; }
+  .lightbox-next { right: 12px; font-size: 2.2rem; }
+  .lightbox-img-wrap { width: 96vw; }
+
+  /* contact */
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-left p { max-width: 100%; }
+  .contact-link { flex-wrap: wrap; gap: 8px; }
+  .contact-link-label { min-width: 60px; }
+  .contact-link-val { font-size: 0.9rem; flex: 1 1 100%; }
+
+  /* footer */
+  .footer-inner {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* ---- 420px and below (small phones) ---- */
+@media (max-width: 420px) {
+  .container { padding: 0 16px; }
+  #navbar { padding: 16px 16px; }
+  #navbar.scrolled { padding: 12px 16px; }
+
+  .hero-name { font-size: clamp(2.6rem, 15vw, 4rem); }
+  .hero-tagline { font-size: 1rem; }
+
+  .section-title { font-size: clamp(1.8rem, 9vw, 2.6rem); }
+
+  .modal-gallery-grid { grid-template-columns: 1fr; }
+  .gallery-thumb.featured {
+    grid-column: span 1;
+    height: 200px;
+  }
+  .gallery-thumb { height: 200px; }
+
+  .about-interests { gap: 8px; }
+  .about-interests span { font-size: 0.65rem; padding: 6px 14px; }
 }

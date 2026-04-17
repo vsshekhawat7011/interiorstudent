@@ -124,17 +124,19 @@ document.addEventListener('DOMContentLoaded', () => {
       coverImage: 'images/project1/WhatsApp Image 2026-04-16 at 10.10.33 PM.jpeg',                          // ← modal hero image
       coverGradient: 'linear-gradient(145deg,#d4b896,#9a6b47,#7a5030)', // ← fallback if image missing
       gallery: [
-        { label: 'Living Area', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.10.34 PM (1).jpeg', gradient: 'linear-gradient(135deg,#c4a07a,#7a5030)', wide: true },
-        { label: 'Entry Foyer', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.10.34 PM (2).jpeg', gradient: 'linear-gradient(135deg,#c4a07a,#7a5030)' },
-        { label: 'Dining Nook', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.10.34 PM.jpeg', gradient: 'linear-gradient(135deg,#b89060,#8a6040)' },
-        { label: 'Material Board', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.10.35 PM.jpeg', gradient: 'linear-gradient(135deg,#e0c8a8,#a07848)' },
-        { label: 'Floor Plan', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.13.27 PM.jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)' },
-        { label: 'Floor Plan', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.13.38 PM.jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)' },
-        { label: 'Floor Plan', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.14.02 PM.jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)' },
-        { label: 'Floor Plan', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.16.13 PM (1).jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)' },
-        { label: 'Floor Plan', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.16.13 PM (2).jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)' },
-        { label: 'Floor Plan', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.16.13 PM.jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)' },
-        { label: 'Floor Plan', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.10.35 PM (1).jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)' },
+        { label: 'Entrance', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.13.27 PM.jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)', wide: true },
+        { label: 'Plan', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.10.34 PM.jpeg', gradient: 'linear-gradient(135deg,#b89060,#8a6040)' },
+        { label: 'Mood Board', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.10.35 PM (1).jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)' },
+        { label: 'Section aa', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.10.34 PM (1).jpeg', gradient: 'linear-gradient(135deg,#c4a07a,#7a5030)' },
+        { label: 'Retail Store', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.13.38 PM.jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)' },
+        { label: 'Karoke elevation', image: 'images/project1/karoke.jpeg', gradient: 'linear-gradient(135deg,#e0c8a8,#a07848)' },
+        { label: 'Karaoke', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.14.02 PM.jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)' },
+        { label: 'Bar Elevation', image: 'images/project1/bar.jpeg', gradient: 'linear-gradient(135deg,#c4a07a,#7a5030)' },
+        { label: 'Dining', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.16.13 PM (1).jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)' },
+        { label: 'Dining', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.16.13 PM (2).jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)' },
+        { label: 'Bar', image: 'images/project1/WhatsApp Image 2026-04-16 at 10.16.13 PM.jpeg', gradient: 'linear-gradient(135deg,#c8b090,#907058)' },
+
+
       ]
 
 
@@ -146,18 +148,16 @@ document.addEventListener('DOMContentLoaded', () => {
       coverImage: 'images/project2/WhatsApp Image 2026-04-16 at 10.20.52 PM.jpeg',
       coverGradient: 'linear-gradient(145deg,#8c3f2b,#c47a60,#e8a882)',
       gallery: [
-        { label: 'Main Hall', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.20.52 PM.jpeg', gradient: 'linear-gradient(145deg,#8c3f2b,#c47a60)', wide: true },
-        { label: 'Counter Zone', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.22.56 PM (1).jpeg', gradient: 'linear-gradient(135deg,#a05040,#d08060)' },
-        { label: 'Seating Nook', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.22.56 PM (2).jpeg', gradient: 'linear-gradient(135deg,#c06848,#e09870)' },
-        { label: 'Materials', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.22.56 PM.jpeg', gradient: 'linear-gradient(135deg,#904030,#b86050)' },
-        { label: '3D Render', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.24.05 PM.jpeg', gradient: 'linear-gradient(135deg,#d07858,#f0a880)' },
-        { label: 'Lighting Detail', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.30.37 PM.jpeg', gradient: 'linear-gradient(135deg,#784030,#a86858)' },
-        { label: 'Lighting Detail', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.30.38 PM (1).jpeg', gradient: 'linear-gradient(135deg,#784030,#a86858)' },
-        { label: 'Lighting Detail', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.30.38 PM (2).jpeg', gradient: 'linear-gradient(135deg,#784030,#a86858)' },
-        { label: 'Lighting Detail', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.42.45 PM (1).jpeg', gradient: 'linear-gradient(135deg,#784030,#a86858)' },
-        { label: 'Lighting Detail', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.42.45 PM (2).jpeg', gradient: 'linear-gradient(135deg,#784030,#a86858)' },
-        { label: 'Lighting Detail', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.42.45 PM (3).jpeg', gradient: 'linear-gradient(135deg,#784030,#a86858)' },
-        { label: 'Lighting Detail', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.42.45 PM.jpeg', gradient: 'linear-gradient(135deg,#784030,#a86858)' },
+        { label: 'mood board', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.24.05 PM.jpeg', gradient: 'linear-gradient(135deg,#d07858,#f0a880)', wide: true },
+        { label: 'plan', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.22.56 PM.jpeg', gradient: 'linear-gradient(135deg,#904030,#b86050)' },
+        { label: 'Elevation', image: 'images/project2/Elevation.jpeg', gradient: 'linear-gradient(135deg,#c06848,#e09870)' },
+        { label: 'photoshop render', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.22.56 PM (1).jpeg', gradient: 'linear-gradient(135deg,#a05040,#d08060)' },
+        { label: 'Elevation', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.30.38 PM (1).jpeg', gradient: 'linear-gradient(135deg,#784030,#a86858)' },
+        { label: 'Photoshop Render', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.30.38 PM (2).jpeg', gradient: 'linear-gradient(135deg,#784030,#a86858)' },
+        { label: 'Renders', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.42.45 PM (1).jpeg', gradient: 'linear-gradient(135deg,#784030,#a86858)' },
+        { label: 'Renders', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.42.45 PM (2).jpeg', gradient: 'linear-gradient(135deg,#784030,#a86858)' },
+        { label: 'Renders', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.42.45 PM (3).jpeg', gradient: 'linear-gradient(135deg,#784030,#a86858)' },
+        { label: 'Renders', image: 'images/project2/WhatsApp Image 2026-04-16 at 10.42.45 PM.jpeg', gradient: 'linear-gradient(135deg,#784030,#a86858)' },
       ]
     },
     3: {
@@ -168,18 +168,18 @@ document.addEventListener('DOMContentLoaded', () => {
       coverGradient: 'linear-gradient(145deg,#4a7568,#7aaa98,#a8cec4)',
       gallery: [
         { label: 'Concept Render', image: 'images/project3/title.jpeg', gradient: 'linear-gradient(145deg,#4a7568,#7aaa98)', wide: true },
-        { label: 'Meditation Room', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (1).jpeg', gradient: 'linear-gradient(135deg,#507a6e,#88b8a8)' },
-        { label: 'Bath Ritual Space', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (2).jpeg', gradient: 'linear-gradient(135deg,#3a6058,#70a090)' },
-        { label: 'Material Palette', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (3).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
-        { label: 'Material Palette', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (4).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
-        { label: 'Material Palette', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (5).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
-        { label: 'Material Palette', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (6).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
-        { label: 'Material Palette', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (7).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
-        { label: 'Material Palette', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (8).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
-        { label: 'Material Palette', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (9).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
-        { label: 'Material Palette', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (10).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
-        { label: 'Material Palette', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (10).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
-        { label: 'Material Palette', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM.jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
+        { label: 'Ai generation', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (1).jpeg', gradient: 'linear-gradient(135deg,#507a6e,#88b8a8)' },
+        { label: '  ', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (2).jpeg', gradient: 'linear-gradient(135deg,#3a6058,#70a090)' },
+        { label: ' ', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (3).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
+        { label: ' ', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (4).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
+        { label: ' ', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (5).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
+        { label: ' ', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (6).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
+        { label: ' ', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (7).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
+        { label: ' ', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (8).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
+        { label: ' ', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (9).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
+        { label: ' ', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (10).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
+        { label: '', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM (10).jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
+        { label: 'Ideation', image: 'images/project3/WhatsApp Image 2026-04-16 at 10.46.51 PM.jpeg', gradient: 'linear-gradient(135deg,#608878,#90bab0)' },
       ]
     },
     4: {
@@ -190,19 +190,19 @@ document.addEventListener('DOMContentLoaded', () => {
       coverGradient: 'linear-gradient(145deg,#5e5044,#96806e,#c4a890)',
       gallery: [
         { label: 'Full View', image: 'images/project4/WhatsApp Image 2026-04-16 at 11.08.22 PM.jpeg', gradient: 'linear-gradient(145deg,#5e5044,#96806e)', wide: true },
-        { label: 'Kitchen Zone', image: 'images/project4/WhatsApp Image 2026-04-16 at 11.08.23 PM (1).jpeg', gradient: 'linear-gradient(135deg,#6e6050,#a09080)' },
-        { label: 'Sleeping Alcove', image: 'images/project4/WhatsApp Image 2026-04-16 at 11.08.23 PM.jpeg', gradient: 'linear-gradient(135deg,#504540,#887870)' },
-        { label: 'Work Nook', image: 'images/project4/WhatsApp Image 2026-04-16 at 11.08.24 PM (1).jpeg', gradient: 'linear-gradient(135deg,#806858,#b09888)' },
-        { label: 'Plan & Sections', image: 'images/project4/WhatsApp Image 2026-04-16 at 11.08.24 PM.jpeg', gradient: 'linear-gradient(135deg,#c0a888,#907868)' },
-        { label: 'Plan & Sections', image: 'images/project4/WhatsApp Image 2026-04-16 at 11.08.25 PM (1).jpeg', gradient: 'linear-gradient(135deg,#c0a888,#907868)' },
-        { label: 'Plan & Sections', image: 'images/project4/WhatsApp Image 2026-04-16 at 11.08.25 PM.jpeg', gradient: 'linear-gradient(135deg,#c0a888,#907868)' },
+        { label: 'Pool Cue inspired', image: 'images/project4/WhatsApp Image 2026-04-16 at 11.08.23 PM (1).jpeg', gradient: 'linear-gradient(135deg,#6e6050,#a09080)' },
+        { label: 'Curves', image: 'images/project4/WhatsApp Image 2026-04-16 at 11.08.23 PM.jpeg', gradient: 'linear-gradient(135deg,#504540,#887870)' },
+        { label: 'Designer', image: 'images/project4/WhatsApp Image 2026-04-16 at 11.08.24 PM (1).jpeg', gradient: 'linear-gradient(135deg,#806858,#b09888)' },
+        { label: 'Joinery', image: 'images/project4/WhatsApp Image 2026-04-16 at 11.08.24 PM.jpeg', gradient: 'linear-gradient(135deg,#c0a888,#907868)' },
+        { label: '30" height table', image: 'images/project4/WhatsApp Image 2026-04-16 at 11.08.25 PM (1).jpeg', gradient: 'linear-gradient(135deg,#c0a888,#907868)' },
+        { label: 'Craftman', image: 'images/project4/WhatsApp Image 2026-04-16 at 11.08.25 PM.jpeg', gradient: 'linear-gradient(135deg,#c0a888,#907868)' },
 
       ]
     },
     5: {
       tag: 'Modern', title: ' Modern Lines',
       desc: 'my role in the project - •Technical drawing•3D drawing•Design development',
-      year: '2025', type: 'Sustainable / Natural Build', tools: 'Photoshop · Hand Drawing',
+      year: '2025', type: 'Modern lines', tools: 'Sketchup and d5',
       coverImage: 'images/project5/WhatsApp Image 2026-04-17 at 2.07.19 AM.jpeg',
       coverGradient: 'linear-gradient(145deg,#a08040,#c8a868,#e0c898)',
       gallery: [
@@ -228,16 +228,16 @@ document.addEventListener('DOMContentLoaded', () => {
       coverImage: 'images/project6/WhatsApp Image 2026-04-17 at 12.04.35 AM.jpeg',
       coverGradient: 'linear-gradient(145deg,#3c4858,#607080,#8898a8)',
       gallery: [
-        { label: 'Main Gallery', image:'images/project6/2.png', gradient: 'linear-gradient(145deg,#3c4858,#607080)', wide: true },
+        { label: 'Main Gallery', image: 'images/project6/2.png', gradient: 'linear-gradient(145deg,#3c4858,#607080)', wide: true },
         { label: 'Entry Zone', image: 'images/project6/3.png', gradient: 'linear-gradient(135deg,#484e60,#687888)' },
         { label: 'Focal Wall', image: 'images/project6/4.png', gradient: 'linear-gradient(135deg,#304050,#586878)' },
-        { label: 'Lighting Mood', image:'images/project6/5.png', gradient: 'linear-gradient(135deg,#708090,#98a8b8)' },
+        { label: 'Lighting Mood', image: 'images/project6/5.png', gradient: 'linear-gradient(135deg,#708090,#98a8b8)' },
         { label: 'Entry Zone', image: 'images/project6/6.png', gradient: 'linear-gradient(135deg,#484e60,#687888)' },
         { label: 'Focal Wall', image: 'images/project6/7.png', gradient: 'linear-gradient(135deg,#304050,#586878)' },
-        { label: 'Lighting Mood', image:'images/project6/8.png', gradient: 'linear-gradient(135deg,#708090,#98a8b8)' },
+        { label: 'Lighting Mood', image: 'images/project6/8.png', gradient: 'linear-gradient(135deg,#708090,#98a8b8)' },
         { label: 'Entry Zone', image: 'images/project6/9.png', gradient: 'linear-gradient(135deg,#484e60,#687888)' },
         { label: 'Focal Wall', image: 'images/project6/10.png', gradient: 'linear-gradient(135deg,#304050,#586878)' },
-        { label: 'Lighting Mood', image:'images/project6/11.png', gradient: 'linear-gradient(135deg,#708090,#98a8b8)' },
+        { label: 'Lighting Mood', image: 'images/project6/11.png', gradient: 'linear-gradient(135deg,#708090,#98a8b8)' },
         { label: 'Entry Zone', image: 'images/project6/12.png', gradient: 'linear-gradient(135deg,#484e60,#687888)' },
         { label: 'Focal Wall', image: 'images/project6/13.png', gradient: 'linear-gradient(135deg,#304050,#586878)' },
         { label: 'Lighting Mood', image: 'images/project6/14.png', gradient: 'linear-gradient(135deg,#708090,#98a8b8)' },
@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { label: 'Material Board', image: 'images/project7/WhatsApp Image 2026-04-17 at 12.22.11 AM.jpeg', gradient: 'linear-gradient(135deg,#a06858,#c88878)' },
       ]
     },
-   
+
   };
 
 
@@ -346,17 +346,17 @@ document.addEventListener('DOMContentLoaded', () => {
     lightbox.classList.add('open');
   }
 
-function renderLightbox() {
-  const item = lbProject.gallery[lbIdx];
-  lbImg.style.cssText = `width:100%;height:60vh;`
-    + `min-height:260px;`
-    + `background-size:contain;`
-    + `background-repeat:no-repeat;`
-    + `background-position:center;`
-    + `background-color:#0a0604;`
-    + (item.image ? `background-image:url('${item.image}');` : `background:${item.gradient};`);
-  lbCounter.textContent = `${lbIdx + 1} / ${lbProject.gallery.length}  —  ${item.label}`;
-}
+  function renderLightbox() {
+    const item = lbProject.gallery[lbIdx];
+    lbImg.style.cssText = `width:100%;height:60vh;`
+      + `min-height:260px;`
+      + `background-size:contain;`
+      + `background-repeat:no-repeat;`
+      + `background-position:center;`
+      + `background-color:#0a0604;`
+      + (item.image ? `background-image:url('${item.image}');` : `background:${item.gradient};`);
+    lbCounter.textContent = `${lbIdx + 1} / ${lbProject.gallery.length}  —  ${item.label}`;
+  }
 
   function closeLightbox() { lightbox.classList.remove('open'); }
   function prevImg() { lbIdx = (lbIdx - 1 + lbProject.gallery.length) % lbProject.gallery.length; renderLightbox(); }
